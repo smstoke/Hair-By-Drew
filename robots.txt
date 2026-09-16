@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.REPLACE-WITH-YOUR-DOMAIN.com/sitemap.xml
+Sitemap: https://hair-by-drew.com/sitemap.xml
