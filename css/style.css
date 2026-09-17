@@ -623,6 +623,7 @@ h1, h2, h3 {
 }
 
 .service-link-card {
+  position: relative;
   display: block;
   background: var(--pink-light);
   border: 1px solid transparent;
@@ -645,6 +646,18 @@ h1, h2, h3 {
   line-height: 1;
   text-transform: uppercase;
   margin-bottom: 12px;
+}
+
+.service-link-card h2 .service-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Stretched-link: keeps the whole card clickable while the anchor text stays just the service name */
+.service-link-card h2 .service-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
 }
 
 .service-link-card .excerpt {
