@@ -904,7 +904,7 @@ h1, h2, h3 {
     right: 0;
     background: var(--cream);
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 0;
     border-bottom: 1px solid var(--border);
     max-height: 0;
@@ -995,6 +995,10 @@ h1, h2, h3 {
   .site-footer .container {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+
+  .site-footer .logo {
+    justify-self: center;
   }
 
   .footer-social {
