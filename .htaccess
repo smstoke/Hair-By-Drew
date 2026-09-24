@@ -2,3 +2,7 @@
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www\.hair-by-drew\.com$ [NC]
 RewriteRule ^(.*)$ https://hair-by-drew.com/$1 [L,R=301]
+
+# Force /index.html -> / (canonical homepage has no filename)
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+RewriteRule ^index\.html$ / [L,R=301]
