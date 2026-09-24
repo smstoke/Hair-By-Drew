@@ -1,0 +1,4 @@
+# Force www -> non-www (canonical host is hair-by-drew.com)
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.hair-by-drew\.com$ [NC]
+RewriteRule ^(.*)$ https://hair-by-drew.com/$1 [L,R=301]
